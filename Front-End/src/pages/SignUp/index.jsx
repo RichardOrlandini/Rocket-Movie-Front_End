@@ -2,18 +2,16 @@
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 
-import { Link} from 'react-router-dom';
+//import { Link} from 'react-router-dom';
 
-import { Container, Form, Background} from "./styles";
+import { Container, Form, Background} from "./stylkes";
 
 export function SignUp(){
 
     return (
         <Container>
 
-            <Background/> 
-
-            <Form>
+            <Form>k
                 <h1>RocktMovies</h1>
                 <p>Aplicação para registrar seus filmes preferidos!</p>
 
@@ -42,10 +40,12 @@ export function SignUp(){
                     title="Cadastrar" >
                 </Button>
 
-                <Link to="/">
+                <a to="/">
                     Voltar para o login
-                </Link>
+                </a>
             </Form>
+
+            <Background/> 
 
         </Container>
     );

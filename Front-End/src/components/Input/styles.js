@@ -1,38 +1,32 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 100vh;
+     width: 100%;
+     display: flex;
+     align-items: center;
 
-    display: flex;
-    align-items: stretch;
+     background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+     color: ${({theme}) => theme.COLORS.GRAY_200};
 
-    background-color: fff;
-    color: fff;
+     margin-bottom: 8px;
+     border-radius:10px; 
 
-    margin-bottom: 8px;
-    border-radius:10px; 
-
-    > input {
+     > input {
         height: 56px;
         width: 100%;
 
         padding: 12px;
-        color: fff;
+        color: ${({theme}) => theme.COLORS.WHITE};
         background: transparent;
         border: 0;
 
         &:placeholder{
-            color: fff;
+            color: ${({theme}) => theme.COLORS.GRAY_300};
         }
-
        
      }
 
      > svg {
             margin-left: 16px;
         }
-
 `;
-
-
-

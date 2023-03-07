@@ -1,3 +1,4 @@
+
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
@@ -9,7 +10,7 @@ export default createGlobalStyle`
     }
 
     body{
-        background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+        background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
         color: ${({theme}) => theme.COLORS.WHITE};
         -webkit-font-smoothing: antialiased;
     }   
@@ -33,5 +34,4 @@ export default createGlobalStyle`
         filter: brightness(0.9);
     }
 `;
-
 
