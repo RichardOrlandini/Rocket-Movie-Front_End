@@ -6,5 +6,5 @@ export function Section({tile, children}){
         <Container>
             
         </Container>
-    )
+    )   
 }
