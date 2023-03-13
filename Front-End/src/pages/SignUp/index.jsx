@@ -2,10 +2,10 @@
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import {FiMail, FiLock, FiUser } from "react-icons/fi"
+import { Link } from "react-router-dom";
 
-//import { Link} from 'react-router-dom';
 
-import { Container, Form, Background} from "./stylkes";
+import { Container, Form, Background} from './styles';
 
 export function SignUp(){
 
@@ -44,9 +44,9 @@ export function SignUp(){
                     title="Cadastrar" >
                 </Button>
 
-                <a to="/">
+                <Link to="/">
                     Voltar para o login
-                </a>
+                </Link>
             </Form>
 
             <Background/> 
