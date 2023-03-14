@@ -1,11 +1,15 @@
 import { Container, Profile, Search, Logout } from "./styled";
 
+import { useAuth } from "../../hooks/auth";
+
 import { Input} from "../Input";
 
 import {RiShutDownLine} from "react-icons/ri"
 
 
 export function Header(){
+
+    const {signOut} = useAuth();
 
     return (
         <Container>
@@ -18,14 +22,16 @@ export function Header(){
             />
           </Search>
 
+          <Logout onClick={signOut}>
+                    sair
+            </Logout>
+
             <Profile to="/profile">
 
                 <div>
                 <strong>Richard Orlandini</strong>
 
-                <Logout>
-                    sair
-                </Logout>
+               
 
                 </div>
 
