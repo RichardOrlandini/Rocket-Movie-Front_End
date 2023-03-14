@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
+
 
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Section} from "../../components/Section";
 import { Note} from "../../components/Note";
+
+ 
 
 
 
@@ -16,11 +20,14 @@ export function Home(){
 
             <Header/>
 
-            <NewNote>
+            <NewNote   >
             <h1>Meus filmes</h1>
               
-              <Button title="+ Adicionar Filme">
-              </Button>
+              <Link to="/new">
+                <Button to="/new" title="+ Adicionar Filme"/>
+              </Link>
+
+
             </NewNote>
             
             <Content>

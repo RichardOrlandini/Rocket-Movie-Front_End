@@ -6,6 +6,8 @@ import { Section} from "../../components/Section";
 import { Button } from "../../components/Button";
 import { Header} from "../../components/Header";
 import { Input} from "../../components/Input";
+import { Link } from "react-router-dom";
+
 
 
 export function New(){
@@ -19,7 +21,7 @@ export function New(){
 
             <Form>
                 <header>
-                    <a href="/">Voltar</a>
+                    <Link to="/">Voltar</Link>
                     <h1>Novo Filme</h1>
                 </header>
                 
