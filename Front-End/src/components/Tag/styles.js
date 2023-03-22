@@ -1,11 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.span`
-    font-size: 12px;
-    padding: 5px 14px;
-    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 16px;
+    
+    margin-top: 30px;
+    margin-right: 10px;
 
-    margin-right: 6px;
-    color: ${({ theme }) => theme.COLORS.GRAY_50};
+    border: none;
+    border-radius: 8px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 `;
